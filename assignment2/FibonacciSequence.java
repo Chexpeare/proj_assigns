@@ -52,6 +52,6 @@ public class FibonacciSequence extends ConsoleProgram {
 	}
 }
 
-/* Path: /Users/chexpeare/Tech Certifications/02_Programming Certifications/Java/Stanford106AAssignments/bin/week2/FibonacciSequence.class */
+/* Path: /Users/chexpeare/Tech Certifications/02_Programming Certifications/Java/Stanford106AAssignments/src/week2/FibonacciSequence.java */
 
 
