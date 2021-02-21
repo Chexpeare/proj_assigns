@@ -32,7 +32,7 @@ public class FibonacciSequence extends ConsoleProgram {
 		int fib2 = 1;
 		int check = 0;
 		
-		println("   " + "This program lists the Fibonacci series up to 10,000");
+		println("   " + "This program lists the Fibonacci series up to 10,000: ");
 		println("   " + fib1);
 		println("   " + fib2);
 
@@ -52,6 +52,6 @@ public class FibonacciSequence extends ConsoleProgram {
 	}
 }
 
-/* Path: /Users/chexpeare/Tech Certifications/02_Programming Certifications/Java/Stanford106AAssignments/bin/week2/FibonacciSequence.class */
+/* Path: /Users/chexpeare/Tech Certifications/02_Programming Certifications/Java/Stanford106AAssignments/src/week2/FibonacciSequence.java */
 
 
