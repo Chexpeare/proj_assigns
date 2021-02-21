@@ -1,8 +1,30 @@
 package week2;
 
 /*
- * Applet Width: 754
- * Applet Height: 492
+ * FileName: RobotFace.java
+ * ------------------------
+ * getWidth();	-----> Applet Width: 754
+ * getHeight();	-----> Applet Height: 492
+ * 
+ * Draw a robot-looking face consisting of four parts: a head, two eyes, 
+ * and a mouth—which are arranged as follows:
+ * 
+ * • HEAD: The head is a big rectangle whose dimensions are given by the named
+ * constants HEAD_WIDTH and HEAD_HEIGHT. The interior of the head is gray, although it
+ * should be framed in black.
+ * 
+ * • EYES: The eyes should be cricles whose radius in pixels is given by the named
+ * constant EYE_RADIUS. The centers of the eyes should be set horizontally a quarter of
+ * the width of the head in from either edge, and one quarter of the distance down from
+ * the top of the head. The eyes are yellow.
+ * 
+ * • MOUTH: The mouth should be centered with respect to the head in the x-dimension
+ * and one quarter of the distance up from the bottom of the head in the y-dimension.
+ * 
+ * The dimensions of the mouth are given by the named constants:
+ * MOUTH_WIDTH and MOUTH_HEIGHT. The mouth is white.
+ * 
+ * Finally, the robot face should be centered in the graphics window
  */
 
 import acm.graphics.*;
