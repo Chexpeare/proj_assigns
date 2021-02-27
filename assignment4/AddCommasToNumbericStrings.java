@@ -1,14 +1,18 @@
 package week3;
 
-/* File: AddCommasToNumberStrings.java
- * -----------------------------------
- * Textbook Ref: The Art & Science of Java, Chapter 9, p. 255/250
- * 
+/* File: AddCommasToNumbericStrings.java
+ * -------------------------------------
+ * Textbook Ref: The Art & Science of Java (Draft), Chapter 9, p. 254/250-1
+ * To make it easier for programmers to display numbers in this fashion, 
+ * implement a method private String addCommasToNumericString(String digits) 
+ * that takes a string of decimal digits representing a number and returns 
+ * the string formed by inserting commas at every third position, starting 
+ * on the right.
  */
 
 import acm.program.*;
 
-public class NumbersCommaParser extends ConsoleProgram {
+public class AddCommasToNumbericStrings extends ConsoleProgram {
 	
 	public void run() {
 
