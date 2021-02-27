@@ -6,7 +6,7 @@ package week3;
  * 
  */
 
-import acm.program.ConsoleProgram;
+import acm.program.*;
 
 public class NumbersCommaParser extends ConsoleProgram {
 	
