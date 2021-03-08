@@ -7,7 +7,7 @@ package week4;
  * Write a Karel program that will create an inside border around the world. 
  * Each location that is part of the border should have ONE (and only one) 
  * beeper on it and the border should be inset by one square from the outer 
- * walls of the world. 
+ * walls of the world.
  * 
  * In solving this problem, you can count on the following facts about the world:
  * 1.	You may assume that the world is at least 3x3 squares. The correct solution  
@@ -63,7 +63,6 @@ public class MTProb1_KarelTheRobot extends SuperKarel {
 		if(noBeepersPresent()) {
 			move();
 		}
-
 	}
 	
 	private void resetStartPosition() {

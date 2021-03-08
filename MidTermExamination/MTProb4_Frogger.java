@@ -1,6 +1,8 @@
 package week4;
 
 /**
+ * File: MTProb4_Frogger
+ * --------------------- 
  * In the arcade game Frogger, this is a frog that "hops" along the screen.
  * A full game is beyond the scope of an exam problem, but it is relatively 
  * straightforward to write the code that: 
@@ -29,7 +31,7 @@ public class MTProb4_Frogger extends GraphicsProgram {
 	/*
 	 * You may assume NCOLS is odd so that there is a center square, and you may
 	 * also assume that APPLICATION_WIDTH and APPLICATION_HEIGHT have been set so
-	 * the NCOLS & NROWS squares fill the window.
+	 * the NCOLS & NROWS squßares fill the window.
 	 */
 	public static final int APPLICATION_WIDTH = NCOLS * SQSIZE;
 	public static final int APPLICATION_HEIGHT = NROWS * SQSIZE;
@@ -39,7 +41,6 @@ public class MTProb4_Frogger extends GraphicsProgram {
 	 */
 	public void run() {
 		frog = new GImage("frog1c.png");
-//		frog = new GImage("frog1c.png");
 		frog_X = (NCOLS / 2 + 0.5) * SQSIZE;
 		frog_Y = (NROWS - 0.5) * SQSIZE;
 		add(frog, frog_X - frog.getWidth() / 2, frog_Y - frog.getHeight() / 2);
@@ -71,6 +72,7 @@ public class MTProb4_Frogger extends GraphicsProgram {
 		}
 	}
 
+	/* Move the frog tot he new coordinates */
 	private void leapFrog(double leapFrog_X, double leapFrog_Y) {
 		if (frogsPerspective(frog_X + leapFrog_X, frog_Y + leapFrog_Y)) {
 			frog_X += leapFrog_X;
@@ -78,8 +80,22 @@ public class MTProb4_Frogger extends GraphicsProgram {
 			frog.move(leapFrog_X, leapFrog_Y);	// moves the frog to the new coordinates
 		}
 	}
-	/* Keeps the frog within the boundaries of the [NCOLS x NROWS] grid */
+	
+	/* Boundary Check: Keeps the frog within the boundaries of the [NCOLS x NROWS] grid */
 	private boolean frogsPerspective(double x, double y) {
 		return (x >= 0 && x <= NCOLS * SQSIZE && y >= 0 && y <= NROWS * SQSIZE);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
