@@ -2,18 +2,19 @@ package week5;
 
 /* File: OldCoffeeMachine.java
  * ---------------------------
- * Old machine selections
+ * Adaptee: Old machine selections
  */
 
 public class OldCoffeeMachine {
 
-	void smallCup () {
-		System.out.println("Serve small cup.");
+	boolean smallCup() {
+		System.out.println("Serving small cup.");
+	return true;
 	}
-	
-	void largeCup() {
-		System.out.println("Serve large cup.");
-		
+
+	boolean largeCup() {
+		System.out.println("Serving large cup.");
+	return true;
 	}
 }
 

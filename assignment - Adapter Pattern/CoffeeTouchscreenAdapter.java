@@ -2,28 +2,25 @@ package week5;
 
 /* File: CoffeeTouchscreenAdapter.java
  * -----------------------------------
+ * Adapter: receives call 
  */
 
-public class CoffeeTouchscreenAdapter implements CoffeeMachineInterface {
+public abstract class CoffeeTouchscreenAdapter implements CoffeeMachineInterface {
 
-	OldCoffeeMachine oldMachine;
+	OldCoffeeMachine OldVendingMachine;
 
-	public static void main(OldCoffeeMachine oldMachine) {
-		CoffeeTouchscreenAdapter newMachine = new CoffeeTouchscreenAdapter(oldMachine);
-		newMachine.FirstSelection();
-		newMachine.SecondSelection();
+	public CoffeeTouchscreenAdapter(OldCoffeeMachine a) {
+		this.OldVendingMachine = a;
 	}
 	
-	public CoffeeTouchscreenAdapter(OldCoffeeMachine newMachine) {
-		this.oldMachine = newMachine;
+	@Override
+	public void chooseFirstSelection() {
+		this.OldVendingMachine.smallCup();
 	}
 
-	private void FirstSelection() {
-		oldMachine.smallCup();
-	}
-	
-	private void SecondSelection() {
-		oldMachine.largeCup();
+	@Override
+	public void chooseSecondSelection() {
+		this.OldVendingMachine.largeCup();
 	}
 	
 }
